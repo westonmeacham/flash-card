@@ -9,7 +9,7 @@ let words = {
     "I love you": "Ij Iakwe Eok"
 }
 
-let data = object.entries(words)
+let data = Object.entries(words)
 
 function getRandomTerm() {
     randomTerm = data[Math.floor(Math.random() * data.length)]
@@ -17,7 +17,7 @@ function getRandomTerm() {
 }
 
 checkButton.addEventListener('click', function() {
-    definition.computedStyleMap.display = 'block';
+    definition.style.display = 'block';
 });
 
 nextButton.addEventListener('click', function() {
