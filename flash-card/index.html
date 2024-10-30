@@ -6,7 +6,7 @@
         <title>Flash Card</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
+    <body onload="getRandomWord()">
         <h1 class="title">Hello, Get ready to study</h1>
 
         <div class="term">
@@ -18,8 +18,8 @@
         </div>
 
         <div class="button">
-            <button>Check Definition</button>
-            <button>Nect Definition</button>
+            <button class="check">Check Definition</button>
+            <button class="next">Next Definition</button>
         </div>
         <script src="js/script.js"></script>
     </body>

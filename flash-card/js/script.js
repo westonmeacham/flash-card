@@ -11,9 +11,10 @@ let words = {
 
 let data = Object.entries(words)
 
-function getRandomTerm() {
+function getRandomWord() {
     randomTerm = data[Math.floor(Math.random() * data.length)]
-    console.log(randomTerm);
+    term.innerHTML = `<h3>${randomTerm[0]}</h3>`;
+    definition.innerHTML = `<h3>${randomTerm[1]}</h3>`;
 }
 
 checkButton.addEventListener('click', function() {
@@ -21,7 +22,6 @@ checkButton.addEventListener('click', function() {
 });
 
 nextButton.addEventListener('click', function() {
-    console.log("You clicked the next button")
+    getRandomWord();
 });
 
-getRandomTerm()

@@ -19,6 +19,7 @@
     width: 45%;
     margin: auto;
     margin-top: 100px;
+    display: none;
 }
 
 .button {
@@ -28,7 +29,7 @@
 
 button {
     color: white;
-    background-color: greenyellow;
+    background-color: rgb(18, 209, 18);
     padding: 20px;
     border-radius: 15px;
 }
