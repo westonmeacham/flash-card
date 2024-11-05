@@ -5,14 +5,20 @@ const nextButton = document.querySelector('.next');
 
 let words = {
     Hello: "Iakwe",
-    Goodbye: "Jerramon",
-    "I love you": "Ij Iakwe Eok"
-}
+    Goodbye: "Jeraamman",
+    "I love you": "Ij Iakwe Eok",
+    Hope: "Kõjatdarikrik",
+    "How are you": "Ej et am mour",
+    Yes: "Aet",
+    No: "Jab",
+    "My name is": "Eta in",
+    Sorry: "Jolok bõd"
+};
 
-let data = Object.entries(words)
+data = Object.entries(words);
 
 function getRandomWord() {
-    randomTerm = data[Math.floor(Math.random() * data.length)]
+    let randomTerm = data[Math.floor(Math.random() * data.length)]
     term.innerHTML = `<h3>${randomTerm[0]}</h3>`;
     definition.innerHTML = `<h3>${randomTerm[1]}</h3>`;
 }
@@ -24,3 +30,4 @@ checkButton.addEventListener('click', function() {
 nextButton.addEventListener('click', function() {
     getRandomWord();
 });
+
