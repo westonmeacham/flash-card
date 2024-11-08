@@ -21,6 +21,7 @@ function getRandomWord() {
     let randomTerm = data[Math.floor(Math.random() * data.length)]
     term.innerHTML = `<h3>${randomTerm[0]}</h3>`;
     definition.innerHTML = `<h3>${randomTerm[1]}</h3>`;
+    definition.style.display = 'none'; // hide the definition when new term is shown
 }
 
 checkButton.addEventListener('click', function() {
